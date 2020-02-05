@@ -86,7 +86,7 @@ function fish_prompt
   echo -n -s $cwd $normal
 
   # Show git branch and status
-  if [ (_git_branch_name) ]
+  if [ "$PWD" != "$HOME" ] && [ (_git_branch_name) ]
     set -l git_branch (_git_branch_name)
 
     if [ (_git_is_dirty) ]
