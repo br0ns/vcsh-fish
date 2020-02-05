@@ -1,0 +1,1 @@
+../themes/myclearance/fish_prompt.fish
